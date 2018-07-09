@@ -40,6 +40,7 @@ public class Sample13CameraRotateHittingFaceView extends View {
     }
 
     {
+        setLayerType(LAYER_TYPE_SOFTWARE, null);
         bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.maps);
         Bitmap scaledBitmap = Bitmap.createScaledBitmap(bitmap, bitmap.getWidth() * 2, bitmap.getHeight() * 2, true);
         bitmap.recycle();
